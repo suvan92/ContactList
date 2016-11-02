@@ -54,6 +54,10 @@ int main(int argc, const char * argv[]) {
                     
                     [contactList printContact:arrayIndex];
                     
+                } else {
+                    
+                    NSLog(@"Contact not found");
+                    
                 }
                 
             }

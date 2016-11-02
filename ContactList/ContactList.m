@@ -27,7 +27,8 @@
 
 -(void)listAllContacts{
     for (int i = 0; i < self.listOfContacts.count; i++) {
-        NSLog(@"%d: %@", i, [[self.listOfContacts objectAtIndex:i] name]);
+        Contact *contact = [self.listOfContacts objectAtIndex:i];
+        NSLog(@"%d: %@", i, contact.name);
     }
 }
 
