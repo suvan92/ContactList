@@ -26,16 +26,22 @@
 }
 
 -(void)listAllContacts{
+    
     for (int i = 0; i < self.listOfContacts.count; i++) {
+        
         Contact *contact = [self.listOfContacts objectAtIndex:i];
+        
         NSLog(@"%d: %@", i, contact.name);
+        
     }
 }
 
 -(void)printContact:(NSInteger)contactIndex {
     
-    NSLog(@"%@", [[self.listOfContacts objectAtIndex:contactIndex] name]);
-    NSLog(@"%@", [[self.listOfContacts objectAtIndex:contactIndex] emailAddress]);
+    Contact *contact = [self.listOfContacts objectAtIndex:contactIndex];
+    
+    NSLog(@"%@", contact.name);
+    NSLog(@"%@", contact.emailAddress);
     
     
 }
